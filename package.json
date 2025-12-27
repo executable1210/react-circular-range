@@ -1,0 +1,50 @@
+{
+  "name": "react-circular-range",
+  "version": "1.0.0",
+  "description": "Simple VST-like circular slider/range.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/executable1210/react-circular-range.git"
+  },
+  "homepage": "https://github.com/executable1210/react-circular-range",
+  "author": {
+    "name": "exec",
+    "url": "https://github.com/executable1210"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "slider",
+    "round-slider",
+    "round-range",
+    "circular-slider",
+    "circular-range",
+    "circle-slider",
+    "circe-range"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "peerDependencies": {
+    "react": ">=16 <20",
+    "react-dom": ">=16 <20"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
